@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+   <header>
+    <h1>Survey Form</h1>
+    <p><em>Thank You For Taking Your Time To Give Us FeedBack</em></p>
+   </header>
+    <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" placeholder="Enter Your name" name="name" id="name" required/> <br/>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Your email" name="email" id="email" required/> <br/>
+          </div>
+          <br>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" placeholder="Enter Your Age" id="age" name="age" required/>
+        </div> <br/>
+        <br>
+        <div>
+            <label for="role">Choose A Role That Best Describes You</label> <br/>
+            <select name="select-role" id="role">
+                <option value="student">select Your Role</option>
+                <option value="student">student</option>
+                <option value="student">Teacher</option>
+                <option value="student">Driver</option>
+                <option value="student">Nurse</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="rating"> Would You Recommend Our Product To A Friend ?</label><br/>
+            <input type="radio" name="rating" value="Never" />Never <br/>
+            <input type="radio" name="rating" value="Maybe" />Maybe <br/>
+            <input type="radio" name="rating" value="Likely" />Likely <br/>
+            <input type="radio" name="rating" value="Definitely" />Definitely <br/>
+        </div>
+        <br>
+<div>
+    <label for="review">Select things that you liked about our company</label><br/>
+    <input type="checkbox" name="review" value="UI" />UI <br/>
+    <input type="checkbox" name="review" value="Features"/>Features <br/>
+    <input type="checkbox" name="review" value="Service"/>Service <br/>
+    <input type="checkbox" name="review" value="Simpleness"/>Simpleness<br/>
+</div>
+<br>
+<div>
+    <label for="remark">Remarks</label> <br/>
+    <textarea name="remark" id="remark" cols="20" rows="8" placeholder="Tells How Can We Improve:"></textarea>
+</div>
+<div>
+    <button id="">Submit</button>
+</div>
+
+    </form>
+</body>
+</html>
