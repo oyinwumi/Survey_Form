@@ -4,64 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Survey Form</title>
 </head>
 <body>
-   <header>
-    <h1>Survey Form</h1>
-    <p><em>Thank You For Taking Your Time To Give Us FeedBack</em></p>
-   </header>
-    <form>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" placeholder="Enter Your name" name="name" id="name" required/> <br/>
-        </div>
-        <br>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" placeholder="Enter Your email" name="email" id="email" required/> <br/>
-          </div>
-          <br>
-        <div>
-            <label for="age">Age</label>
-            <input type="number" placeholder="Enter Your Age" id="age" name="age" required/>
-        </div> <br/>
-        <br>
-        <div>
-            <label for="role">Choose A Role That Best Describes You</label> <br/>
-            <select name="select-role" id="role">
-                <option value="student">select Your Role</option>
-                <option value="student">student</option>
-                <option value="student">Teacher</option>
-                <option value="student">Driver</option>
-                <option value="student">Nurse</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <label for="rating"> Would You Recommend Our Product To A Friend ?</label><br/>
-            <input type="radio" name="rating" value="Never" />Never <br/>
-            <input type="radio" name="rating" value="Maybe" />Maybe <br/>
-            <input type="radio" name="rating" value="Likely" />Likely <br/>
-            <input type="radio" name="rating" value="Definitely" />Definitely <br/>
-        </div>
-        <br>
-<div>
-    <label for="review">Select things that you liked about our company</label><br/>
-    <input type="checkbox" name="review" value="UI" />UI <br/>
-    <input type="checkbox" name="review" value="Features"/>Features <br/>
-    <input type="checkbox" name="review" value="Service"/>Service <br/>
-    <input type="checkbox" name="review" value="Simpleness"/>Simpleness<br/>
-</div>
-<br>
-<div>
-    <label for="remark">Remarks</label> <br/>
-    <textarea name="remark" id="remark" cols="20" rows="8" placeholder="Tells How Can We Improve:"></textarea>
-</div>
-<div>
-    <button id="">Submit</button>
-</div>
-
-    </form>
+ <div class="container">
+    <header>
+        <h1>Survey Form</h1>
+        <p><em>Thank You For Taking Your Time To Give Us FeedBack</em></p>
+       </header>
+        <form class="form-container">
+            <div >
+              <label for="name">Name</label>
+              <input type="text" placeholder="Enter Your name" name="name" id="name"  class="input-box"required/> <br/>
+            </div>
+            <br>
+            <div >
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter Your email" name="email" id="email" class="input-box" required/> <br/>
+              </div>
+              <br>
+            <div >
+                <label for="age" >Age</label>
+                <input type="number" placeholder="Enter Your Age" id="age" name="age" class="input-box"required/>
+            </div> <br/>
+            <br>
+            <div>
+                <label for="role" class="select-role">Choose A Role That Best Describes You</label> <br/>
+                <select name="select-role" id="role">
+                    <option value="student">Select Your Role</option>
+                    <option value="student">student</option>
+                    <option value="student">Teacher</option>
+                    <option value="student">Driver</option>
+                    <option value="student">Nurse</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="rating" > Would You Recommend Our Product To A Friend ?</label><br/>
+                <input type="radio" name="rating" value="Never"class="radio-grp" /><span class="radio-span">Never</span> <br/>
+                <input type="radio" name="rating" value="Maybe" class="radio-grp"/><span class="radio-span">Maybe</span> <br/>
+                <input type="radio" name="rating" value="Likely"class="radio-grp" /><span class="radio-span">Likely </span><br/>
+                <input type="radio" name="rating" value="Definitely"class="radio-grp" /><span class="radio-span">Definitely </span><br/>
+            </div>
+            <br>
+    <div>
+        <label for="review">Select things that you liked about our company</label><br/>
+        <input type="checkbox" name="review" value="UI"  class="checkbox-grp"/> <span class="check-span">UI </span><br/>
+        <input type="checkbox" name="review" value="Features"class="checkbox-grp"/> <span class="check-span">Features</span>  <br/>
+        <input type="checkbox" name="review" value="Service" class="checkbox-grp"/><span class="check-span">Service</span><br/>
+        <input type="checkbox" name="review" value="Simpleness" class="checkbox-grp"/><span class="check-span">Simpleness</span><br/>
+    </div>
+    <br>
+    <div>
+        <label for="remark">Remarks</label> <br/>
+        <textarea name="remark" id="remark" cols="20" rows="8" placeholder="Tells How Can We Improve:"></textarea>
+    </div>
+    <div>
+        <button id="submit">Submit</button>
+    </div>
+    
+        </form>
+ </div>
 </body>
 </html>
