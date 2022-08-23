@@ -53,13 +53,15 @@ padding: 20px;
     border: none;
     background-color: white;
     border-radius: 4px;
-   margin-top: 8px;
+    margin-top: 8px;
 }
 
 .select-role{
 padding-bottom: 10px;
 }
-
+::placeholder , option , #role{
+    color: gray;
+} 
 label {
     font-size: 16px;
     font-weight: 500;
@@ -121,6 +123,12 @@ input[type='radio']{
 /* for tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
     .container{
-        width: 60%;
+        width: 40%;
     } 
 } 
+/* for laptop */
+@media (min-width: 1024px) and (max-width: 2000px){
+    .container{
+        width: 30%;
+    } 
+}
